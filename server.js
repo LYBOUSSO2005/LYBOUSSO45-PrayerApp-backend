@@ -13,7 +13,7 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, '../frontend')));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/index.html'));
+  res.send(res.send('API du Backend LY BOUSSO 45 est en ligne et fonctionnelle !'););
 });
 
 

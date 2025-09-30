@@ -31,6 +31,7 @@ app.use('/api/prayers', prayerRoutes);
 
 // 🏁 Lancement du serveur
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+// On spécifie l'hôte '0.0.0.0' pour s'assurer que l'app écoute sur toutes les interfaces
+app.listen(PORT, '0.0.0.0', () => { 
   console.log(`🚀 Serveur lancé sur le port ${PORT}`);
 });
